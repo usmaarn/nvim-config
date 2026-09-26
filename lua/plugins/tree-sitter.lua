@@ -11,6 +11,7 @@ return {
 
 		local parsers = {
 			"bash",
+			"http",
 			"sql",
 			"go",
 			"gomod",

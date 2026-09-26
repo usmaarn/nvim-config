@@ -5,11 +5,16 @@ return {
 	},
 	dependencies = {
 		{ "mason-org/mason.nvim", opts = {} },
-		"neovim/nvim-lspconfig",
+		{
+			"neovim/nvim-lspconfig",
+			config = function()
+
+			end,
+		}
 	},
 	config = function()
 		require("mason-lspconfig").setup({
-						
+
 		})
 	end
 }

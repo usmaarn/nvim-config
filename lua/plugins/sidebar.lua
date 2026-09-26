@@ -1,16 +1,12 @@
 return {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
+    "nvim-tree/nvim-tree.lua",
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-      "nvim-tree/nvim-web-devicons", -- optional, but recommended
+      "nvim-tree/nvim-web-devicons",
     },
-    lazy = false, -- neo-tree will lazily load itself
 	config = function()
-		require("neo-tree").setup({
+		require("nvim-tree").setup({
 		})
 
-		vim.keymap.set("n", "<leader>ex", function() vim.cmd("Neotree filesystem toggle") end)
+		vim.keymap.set("n", "<leader>ex", function() vim.cmd("NvimTreeToggle") end)
 	end
 }
